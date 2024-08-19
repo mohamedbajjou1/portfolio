@@ -1,6 +1,6 @@
 "use client";
 import { delay, motion } from "framer-motion";
-const HeroImg = "/Hero.png";
+const HeroImg = "/hero.png";
 
 function Photo() {
   return (
