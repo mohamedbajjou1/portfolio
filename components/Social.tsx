@@ -11,9 +11,9 @@ const socials = [
   { icon: <FaYoutube />, path: "https://www.youtube.com/@ayoub_bajjou" },
   { icon: <FaTwitter />, path: "https://x.com" },
 ];
-const social = (containerStyles: string, iconStyles: string | number) => {
+const social = () => {
   return (
-    <div className={containerStyles}>
+    <div>
       <div className="flex space-x-6">
         {socials.map((item, index) => {
           return (
@@ -21,7 +21,7 @@ const social = (containerStyles: string, iconStyles: string | number) => {
               key={index}
               href={item.path}
               target="_blank"
-              className={`${iconStyles} text-green-500 rounded-full border-2 border-green-500 p-2 hover:text-white duration-200 ease-in-out hover:border-2 hover:border-white`}
+              className={`text-green-500 rounded-full border-2 border-green-500 p-2 hover:text-white duration-200 ease-in-out hover:border-2 hover:border-white`}
             >
               {item.icon}
             </Link>
