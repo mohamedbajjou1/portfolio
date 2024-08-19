@@ -191,7 +191,7 @@ export default function page() {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col max-w-[300px] space-y-4 mx-auto xl:mx-0">
+          <TabsList className="flex flex-col max-w-[300px] mx-auto xl:mx-0">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
