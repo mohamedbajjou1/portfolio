@@ -31,6 +31,7 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const [active, setActive] = useState();
 
   return (
     <nav className="flex w-full font-mono h-20 bg-[#1c1c22] py-6 px-12 text-white justify-between items-center">
@@ -42,15 +43,12 @@ export default function Nav() {
           </h1>
         </Link>
       </h1>
-      <div className="hidden lg:block space-x-6">
+      <div className="hidden lg:block border border-green-500 px-7 py-3 rounded-full space-x-6">
         {links.map((link, index) => {
           return (
             <Link
-              className={`${
-                link.path === pathname &&
-                "text-green-400 border-green-600 border-b-[1.5px]"
-              }
-                capitalize font-medium hover:text-green-500 transition-all px-2 py-4`}
+              className={`${link.path === pathname && "text-green-500"}
+              relative focus-visible:outline capitalize font-medium px-2 py-4`}
               href={link.path}
               key={index}
             >

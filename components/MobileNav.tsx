@@ -58,8 +58,8 @@ const MobileNav = () => {
               <Link
                 onClick={() => setIsMenuOpen(false)}
                 className={`${
-                  link.path === pathname && ""
-                } capitalize font-medium py-2 text-white transition-all`}
+                  link.path === pathname && "text-green-500"
+                } capitalize font-medium py-4 text-white transition-all`}
                 href={link.path}
                 key={index}
               >
