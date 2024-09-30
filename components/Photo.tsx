@@ -4,7 +4,7 @@ const HeroImg = "/hero.png";
 
 function Photo() {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full  relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
